@@ -2,9 +2,9 @@
 
 namespace Seemab40615\Learningpkgdev;
 
+use Seemab40615\Learningpkgdev\Commands\LearningpkgdevCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Seemab40615\Learningpkgdev\Commands\LearningpkgdevCommand;
 
 class LearningpkgdevServiceProvider extends PackageServiceProvider
 {
