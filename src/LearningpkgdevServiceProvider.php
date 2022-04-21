@@ -19,7 +19,7 @@ class LearningpkgdevServiceProvider extends PackageServiceProvider
             ->name('learningpkgdev')
             ->hasConfigFile()
             ->hasViews()
-            ->hasRoute('web.php')
+            ->hasRoute('web')
             ->hasMigration('create_learningpkgdev_table')
             ->hasCommand(LearningpkgdevCommand::class);
     }
