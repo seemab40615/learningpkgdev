@@ -2,9 +2,8 @@
 
 namespace Seemab40615\Learningpkgdev\Tests\Unit;
 
-
-use Seemab40615\Learningpkgdev\Tests\TestCase;
 use Seemab40615\Learningpkgdev\Services\LearningService;
+use Seemab40615\Learningpkgdev\Tests\TestCase;
 
 class LearningServiceTests extends TestCase
 {
@@ -14,9 +13,9 @@ class LearningServiceTests extends TestCase
     }
 
     /** @test */
-    public function isLearningGoodTest():void
+    public function isLearningGoodTest(): void
     {
-        $gatewayMock= $this->createMock(LearningService::class);
+        $gatewayMock = $this->createMock(LearningService::class);
 
         $gatewayMock->method('isLearningGood')
             ->willReturn(true);

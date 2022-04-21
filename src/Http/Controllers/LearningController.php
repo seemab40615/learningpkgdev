@@ -7,6 +7,7 @@ use Seemab40615\Learningpkgdev\Services\LearningService;
 class LearningController extends Controller
 {
     private LearningService $learningService;
+
     public function __construct(LearningService $learningService)
     {
         $this->learningService = $learningService;
@@ -14,9 +15,10 @@ class LearningController extends Controller
 
     public function index()
     {
-        if($this->learningService->isLearningGood())
+        if ($this->learningService->isLearningGood()) {
             return "Yes";
-        else
+        } else {
             return "No";
+        }
     }
 }

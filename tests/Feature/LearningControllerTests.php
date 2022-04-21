@@ -2,9 +2,7 @@
 
 namespace Seemab40615\Learningpkgdev\Tests\Feature;
 
-
 use Seemab40615\Learningpkgdev\Tests\TestCase;
-use Seemab40615\Learningpkgdev\Services\LearningService;
 
 class LearningControllerTests extends TestCase
 {
@@ -14,7 +12,7 @@ class LearningControllerTests extends TestCase
     }
 
     /** @test */
-    public function indexTest():void
+    public function indexTest(): void
     {
         $statusCode = $this->get("/learning")->getStatusCode();
         $this->assertTrue($statusCode == 200);
